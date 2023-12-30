@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Glassmorphic Todo List</title>
+</head>
+<body>
+  <div class="glassmorphic-todo" id="todo">
+    <h1>Glassmorphic Todo List</h1>
+    <div class="input-container">
+      <input type="text" id="newTodo" placeholder="Add a new todo">
+      <button onclick="addTodo()">Add</button>
+    </div>
+    <ul id="todoList"></ul>
+    <div class="download-buttons">
+      <button onclick="downloadTodoList('textpad')">Download as TextPad</button>
+      <button onclick="downloadTodoList('word')">Download as Word</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
