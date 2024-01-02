@@ -11,7 +11,7 @@ function addTodo() {
     `;
     todoList.appendChild(li);
 
-    inputElement.value = ''; // Clear input field after adding todo
+    inputElement.value = '';
   }
 }
 
